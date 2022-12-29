@@ -1,0 +1,105 @@
+.painel-mapas .card-header.sticky-top,
+.painel-mapas .sticky-bottom,
+.painel-mapas .card-header{
+background-color: #fff;
+}
+
+.painel-mapas .card-header .form-floating label{
+left: 10px;
+}
+/*  */
+.resultado-mapas{
+min-height: 500px;
+}
+.resultado-mapas .norus-mapa .rounded{
+border: solid 1px #ddd; /* $gray-lighter;*/
+min-height: 500px;
+}
+.resultado-mapas .norus-mapa .mapa-svg{
+min-height: 400px;
+position: relative;
+padding-bottom: 40px;
+}
+.resultado-mapas .norus-mapa .mapa-svg svg{
+width: 100%;
+}
+.resultado-mapas .norus-mapa .botoes-mapa {
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100%;
+display: flex;
+align-items: center;
+}
+.resultado-mapas .norus-mapa .botoes-mapa .btn{
+    
+}
+/*  */
+.painel-mapas .sticky-bottom{
+border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+z-index: 1;
+}
+.painel-mapas .sticky-bottom .input-group input{
+z-index: 1040;
+}
+/*  */
+.painel-mapas .legenda-mapa{
+text-align: right;
+}
+.painel-mapas .legenda-mapa svg{
+margin-top: -15px;
+}
+.painel-mapas .legenda-mapa svg > text {
+font-size: 12px;
+font-family: sans-serif;
+text-anchor: end;
+fill: #333; 
+}
+@media screen and (max-width:767px) {
+.painel-mapas .legenda-mapa{
+    text-align: center;
+    margin-left: -20px;
+}
+.painel-mapas .legenda-mapa svg {
+    margin-top: 0;
+}
+}
+/*  */
+
+.dp-highlight .ui-state-default {
+background: #20a8d8;
+color: #fff;
+}
+.ui-widget { display: none;} 
+.ui-datepicker table{
+font-size: 0.8em;
+}
+.datepicker table tr td span{
+width: auto;
+height: auto;
+line-height: normal; 
+float: inherit; 
+}
+.point {
+stroke: rgb(0, 0, 0);
+stroke-width: 0;
+fill: rgb(255, 0, 0);
+}
+
+body {
+background-color: #ffff;
+}
+
+#svg{
+float: right;
+}
+
+.brasil {
+fill: none;
+stroke-width: 3px;
+}
+
+.watersheds {
+fill: none;
+stroke-width: 1.5px;
+}

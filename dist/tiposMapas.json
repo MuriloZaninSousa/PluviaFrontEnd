@@ -1,0 +1,42 @@
+[
+    {
+        "id": "eta",
+        "nome": "ETA"
+    },
+    {
+        "id": "gefs",
+        "nome": "GEFS"
+    },
+    {
+        "id": "ons_eta_d_1_pluvia",
+        "nome": "ONS-ETA(d-1)-Pluvia"
+    },
+    {
+        "id": "ons_pluvia",
+        "nome": "ONS-Pluvia"
+    },
+    {
+        "id": "ons",
+        "nome": "ONS"
+    },
+    {
+        "id": "ecmwf_ens",
+        "nome": "ECMWF-ENS"
+    },
+    {
+        "id": "ecmwf_ens_ext",
+        "nome": "ECMWF-ENS ext"
+    },
+    {
+        "id": "merge",
+        "nome": "MERGE"
+    },
+    {
+        "id": "cfs",
+        "nome": "CFS"
+    },
+    {
+        "id": "prec_zero",
+        "nome": "PREC. ZERO"
+    }
+]

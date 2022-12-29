@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mapas</title>
+    <link href="./js/lib/jquery-ui/dist/themes/base/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/lib/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./css/lib/coreui.css">
+    <link rel="stylesheet" href="./js/lib/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link href="./css/Mapas/mapas.css" rel="stylesheet" />
+  </head>
+  <body>    
+    <section id="panielMapas" class="main pt-3 container-fluid grow painel-mapas">
+        <div class="card mb-4">
+       
+            <div class="card-header sticky-top">
+                <div class="row justify-content-md-end">
+                    <div class="form-group col col-sm-6 col-lg-3">
+                        <label for="Mapas">Mapas</label>
+                        <select id="tiposMapas" class="selectpicker form-control" 
+                        aria-label="Tipos de Mapas" >
+                        </select>
+                    </div>            
+                    <div class="col-md-auto pt-3">
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="compararUnicoMapa">Comparar um único mapa</label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="compararUnicoMapa" checked>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="card-body">
+                <div class="row d-flex resultado-mapas" id="resultadoMapas">
+                </div>
+            </div>
+            <div class="sticky-bottom p-3">
+                <div class="row justify-content-md-start">
+                    <div class="col-lg-3 col-md-4 pt-2 col-sm-12 form-floating">
+                        <div class="input-group ">
+                            <input type="text" class="form-control datepicker text-center" size="10" name="startDate" id="startDate">
+                            <input type="text" class="form-control datepicker text-center" size="10" name="finishDate" id="finishDate">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="flex-grow-1 legenda-mapa" >
+                            <svg width="320" height="70" id="legendaCoresMapa">
+                                <g id="linear" transform="translate(40, 46)"></g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/lib/jquery-ui/dist/jquery-ui.min.js"></script>
+    <script src="./js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/lib/bootstrap-select.js"></script>
+    <script src="./js/lib/coreui.js"></script>
+    <script src="./js/lib/axios/dist/axios.min.js"></script>
+    <script src="./js/lib/fontawesome-free-6.0.0-web/js/all.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-contour@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-tip"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./js/Mapas/filtros.js"></script>
+    <script src="./js/Mapas/gerarMapa.js"></script>
+    <script src="./js/Mapas/gerarMapaSVG.js"></script>
+    <script src="./js/Mapas/criarCanvas.js"></script>
+    <script src="./js/Mapas/criarLegenda.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            pluvia.filtrosMapas.calendarioPrevisoes('.datepicker', '#startDate', '#finishDate');
+            pluvia.filtrosMapas.compararMapa('#compararUnicoMapa', '#startDate', '#finishDate', '#resultadoMapas', '#tiposMapas');
+            pluvia.legenda.criarLegenda('#legendaCoresMapa', '#linear');
+            pluvia.filtrosMapas.filtroMapas('#tiposMapas', '#compararUnicoMapa');
+            pluvia.filtrosMapas.listarTiposMapas('#tiposMapas', '#compararUnicoMapa');
+        });
+    </script>
+  </body>
+</html>

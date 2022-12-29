@@ -1,0 +1,122 @@
+[
+    {
+      "id" : 3,
+      "idTipo": "gefs",
+      "titulo": "gefs",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "30/12/2022" 
+    },
+    {  
+      "id" : 4, 
+      "idTipo": "gefs",
+      "titulo": "GEFS",  
+      "legenda": "lorem ipsun",  
+      "coordenadas" : "",
+      "data"   : "26/12/2022" 
+    },
+    {  
+      "id": 5, 
+      "idTipo": "ons_eta_d_1_pluvia",
+      "titulo": "ONS-ETA(d-1)-Pluvia",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "27/12/2022" 
+    },
+    {
+      "id": 6,
+      "idTipo": "eta",
+      "titulo": "eta teste",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "25/12/2022"
+    },
+    {
+      "id": 7,
+      "idTipo": "eta",
+      "titulo": "eta",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "25/12/2022"
+    },
+    {
+      "id": 8,
+      "idTipo": "eta",
+      "titulo": "eta",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "26/12/2022"
+    },
+    {
+      "id": 9,
+      "idTipo": "eta",
+      "titulo": "eta",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "27/12/2022"
+    },
+    {
+      "id": 10,
+      "idTipo": "ons_pluvia",
+      "titulo": "ONS-Pluvia",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "28/12/2022"
+    },
+    {
+      "id": 11,
+      "idTipo": "ons",
+      "titulo": "ONS",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "29/12/2022"
+    },
+    {
+      "id": 1,
+      "idTipo": "ecmwf_ens_ext",
+      "titulo": "ECMWF-ENS",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "30/12/2022"
+    },
+    {
+      "id": 2,
+      "idTipo": "ecmwf_ens_ext",
+      "titulo": "ECMWF-ENS ext",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "20/12/2022"
+    },
+    {
+      "id": 12,
+      "idTipo": "mege",
+      "titulo": "MERGE",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "20/12/2022"
+    },
+    {
+      "id": 13,
+      "idTipo": "cfs",
+      "titulo": "CFS",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "20/12/2022"
+    },
+    {
+      "id": 14,
+      "idTipo": "prec_zero",
+      "titulo": "PREC. ZERO",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "20/12/2022"
+    },
+    {
+      "id": 15,
+      "idTipo": "prec_zero",
+      "titulo": "PREC. ZERO",
+      "legenda": "lorem ipsun",
+      "coordenadas" : "",
+      "data"   : "20/12/2022"
+    }
+]
