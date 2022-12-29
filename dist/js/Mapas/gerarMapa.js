@@ -62,7 +62,7 @@
         }
     }
  
-    // depois que gerar o svg e imagem
+    // Depois que gerar o svg e imagem
     function htmlMapa(item) {
         const info = `
         <div class="item-mapa col-lg-4 col-md-6 col-sm-12 p-3 norus-mapa" id="${item.idTipo}_${item.id}">
