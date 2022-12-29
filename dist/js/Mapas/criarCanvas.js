@@ -30,7 +30,7 @@
 
       d3.select(norusidmapa + '_urlPNG').html(pngImg);
       const a = document.createElement("a");
-      a.download = "mapa.png";
+      a.download = norusidmapa + "mapa.png";
       a.href = canvasData;
       a.click();
     };
