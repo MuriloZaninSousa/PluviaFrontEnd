@@ -36,7 +36,6 @@
     };
   });
   }
-//teste
   window.pluvia.imagemMapa = function () {
 
       if(!d3) { throw new Error("A biblioteca d3.js não foi carregada."); }
